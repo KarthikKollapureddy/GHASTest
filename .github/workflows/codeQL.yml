@@ -1,0 +1,15 @@
+name: CodeQL
+
+on:
+  push:
+    branches: [main, codeql]
+
+jobs:
+  run_scans:
+    name: Initialize CodeQl
+    uses: github/codeql-action/init@v1
+    with:
+      language: "['java']"
+      jdk-version: '17'
+      gradle-version: '8.8'
+      build-mode: "none"
