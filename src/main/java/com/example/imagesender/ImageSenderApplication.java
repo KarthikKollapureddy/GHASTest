@@ -8,6 +8,7 @@ public class ImageSenderApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ImageSenderApplication.class, args);
+        System.out.println("API Key- hjsbgkwgbagbkagjb");
     }
 
 }
